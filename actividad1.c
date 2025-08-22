@@ -2,9 +2,11 @@
 
 // --- Definición de nuestra función ---
 // La definimos antes de main para que main sepa que existe.
-int imprimirDatos(const char* nombre, int edad) {
+int imprimirDatos(char* nombre, int edad) {
     printf("Nombre: %s, Edad: %d años\n", nombre, edad);
     return 0;
+    char miCadena[] = "Hola";
+    // char = ["H", "o", "l", "a"];
 }
 
 void saludar(){
