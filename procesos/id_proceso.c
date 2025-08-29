@@ -9,5 +9,7 @@ int main() {
     printf("ID del proceso actual: %d\n", id_proceso_actual);
     printf("ID del proceso padre: %d\n", id_proceso_padre);
 
+    sleep(5);
+     
     return 0;
 }
