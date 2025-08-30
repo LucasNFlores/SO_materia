@@ -10,7 +10,5 @@ int main() {
 
     sleep(5);
 
-    int returnValue = system("ps -aef");
-
     return 0;
 }
