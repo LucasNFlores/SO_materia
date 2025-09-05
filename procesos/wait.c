@@ -8,6 +8,7 @@ void saltoLinea() {
     printf(" \n");
 }
 
+
 int imprimirInfoProceso(int tiempo_espera) {
     printf(
         "mi PID es %d \n"
@@ -31,6 +32,7 @@ int main() {
     saltoLinea();
     printf("Este es el proceso padre (PID-%d) \n", proceso_padre);
     imprimirInfoProceso(1);
+    printf("------------------ de aca para abajo son los procesos hijos ------------------ \n");
     saltoLinea();
 
     // revisar la actividad de SO para esto con el WAIT y el sleeo
@@ -58,6 +60,7 @@ int main() {
     );
     
     if (getpid() == proceso_padre) {
+        sleep(2);
         printf("----------- Separado ----------- \n");
         saltoLinea();
         printf("Este es el fin del proceso padre (PID-%d) \n", proceso_padre);
