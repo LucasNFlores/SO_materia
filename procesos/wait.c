@@ -38,6 +38,7 @@ int main() {
     // revisar la actividad de SO para esto con el WAIT y el sleeo
     for (int i = 0; i < loops; i++) {
         proceso = fork();
+        
         if (proceso == 0) {
             sleep(tiempo_espera);
 
